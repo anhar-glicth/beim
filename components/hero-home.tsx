@@ -79,8 +79,8 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                BEIM adalah platform pembuatan website premium bertenaga AI yang mengubah
+                cara perusahaan menciptakan antarmuka digital bersama.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -89,22 +89,23 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto font-semibold"
+                    href="/pemesanan"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
+                      Pesan Jasa Website{" "}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
                     </span>
                   </a>
                   <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto font-semibold"
+                    href="/produk"
                   >
-                    Learn More
+                    Lihat Layanan Kami
                   </a>
+
                 </div>
               </div>
             </div>

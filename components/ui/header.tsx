@@ -1,37 +1,89 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Logo from "./logo";
 
 export default function Header() {
-  return (
-    <header className="fixed top-2 z-30 w-full md:top-6">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
-          {/* Site branding */}
-          <div className="flex flex-1 items-center">
-            <Logo />
-          </div>
+  const [open, setOpen] = useState(false);
 
-          {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
-              >
-                Login
+  const links = [
+    { href: "/profile",     label: "Profil" },
+    { href: "/visi-misi",   label: "Visi & Misi" },
+    { href: "/produk",      label: "Produk" },
+    { href: "/portofolio",  label: "Portofolio" },
+    { href: "/our-team",    label: "Tim Kami" },
+    { href: "/pemesanan",   label: "Pesan Jasa" },
+  ];
+
+  return (
+    <>
+      {/* ===== HEADER BAR ===== */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex h-16 items-center justify-between">
+
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <Link href="/" className="flex items-center gap-2">
+                <Logo />
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
-              >
-                Register
-              </Link>
-            </li>
-          </ul>
+            </div>
+
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-1">
+              {links.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-all"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Hamburger — visible on < lg */}
+            <button
+              onClick={() => setOpen(!open)}
+              className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+              aria-label="Buka menu"
+            >
+              {open ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+
+        {/* Mobile dropdown */}
+        {open && (
+          <div className="lg:hidden border-t border-gray-100 bg-white shadow-lg">
+            <nav className="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-1">
+              {links.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className="px-4 py-3 rounded-xl text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        )}
+      </header>
+
+      {/* Spacer so page content starts below the fixed header */}
+      <div className="h-16" />
+    </>
   );
 }
+

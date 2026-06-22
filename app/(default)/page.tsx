@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Home - Solusi Website Premium",
+  description: "Layanan pembuatan website premium, toko online, optimasi SEO dan kustom web app untuk bisnis Anda.",
 };
 
 import Hero from "@/components/hero-home";
@@ -20,3 +20,5 @@ export default function Home() {
     </>
   );
 }
+
+
