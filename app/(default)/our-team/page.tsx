@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import OurTeam from "@/components/our-team";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Tim Kami - Solusi Website Premium",
   description: "Kenali para ahli profesional di balik proyek-proyek sukses kami.",
 };

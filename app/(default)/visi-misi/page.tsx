@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import VisiMisi from "@/components/visi-misi";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Visi & Misi - Solusi Website Premium",
   description: "Arah, visi, dan komitmen agensi kami dalam melayani pelanggan.",
 };

@@ -1,4 +1,6 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Home - Solusi Website Premium",
   description: "Layanan pembuatan website premium, toko online, optimasi SEO dan kustom web app untuk bisnis Anda.",
 };

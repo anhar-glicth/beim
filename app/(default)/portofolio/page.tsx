@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Portofolio from "@/components/portofolio";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Portofolio - Solusi Website Premium",
   description: "Proyek-proyek unggulan yang telah kami selesaikan untuk berbagai klien dari berbagai industri.",
 };

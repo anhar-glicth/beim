@@ -79,7 +79,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                BEIM adalah platform pembuatan website premium bertenaga AI yang mengubah
+                BEIM adalah platform pembuatan website premium yang mengubah
                 cara perusahaan menciptakan antarmuka digital bersama.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">

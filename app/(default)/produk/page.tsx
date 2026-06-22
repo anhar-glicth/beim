@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Produk from "@/components/produk";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Produk & Layanan - Solusi Website Premium",
   description: "Daftar layanan pembuatan website, toko online, custom web app, dan SEO.",
 };
