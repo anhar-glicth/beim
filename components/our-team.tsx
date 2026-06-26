@@ -15,7 +15,7 @@ export default function OurTeam() {
       bio: "Memimpin visi dan strategi perusahaan secara keseluruhan, memastikan pertumbuhan bisnis yang berkelanjutan dan berdampak bagi klien."
     },
     {
-      name: "Shinta rahmata suliyani",
+      name: "Shinta Rahmata Suliyani",
       role: "COO — Chief Operating Officer",
       avatar: Avatar02,
       bio: "Mengawasi operasional harian perusahaan, memastikan setiap proyek berjalan tepat waktu, terstruktur, dan memenuhi standar kualitas tertinggi."
