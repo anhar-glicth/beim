@@ -8,91 +8,63 @@ type Category = "Semua" | "Company Profile" | "E-Commerce" | "Web App" | "SEO";
 const projects = [
   {
     id: 1,
-    title: "PT. Maju Bersama — Company Profile",
-    category: "Company Profile" as Category,
-    tech: ["Next.js", "Tailwind CSS"],
-    description: "Website profil perusahaan modern dengan animasi elegan dan halaman layanan yang lengkap.",
-    color: "from-blue-500 to-indigo-600",
-    icon: "🏢",
-    year: "2024",
-    link: "#",
+    title: "EstateLux — Agen Properti Mewah",
+    category: "Web App" as Category,
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    description: "Platform pencarian & pemasaran properti eksklusif dengan kalkulator KPR pintar, peta lokasi interaktif, dan visual hunian premium.",
+    color: "from-amber-600 to-yellow-500",
+    icon: "🏠",
+    year: "2026",
+    link: "https://properti-x4q3.vercel.app/",
+    image: "/images/portfolio/estatelux.png",
   },
   {
     id: 2,
-    title: "BatiKraft — Toko Online Batik",
-    category: "E-Commerce" as Category,
-    tech: ["React", "Node.js", "MongoDB"],
-    description: "Platform e-commerce khusus produk batik premium dengan fitur pembayaran Midtrans & manajemen stok.",
-    color: "from-orange-500 to-rose-500",
-    icon: "🛍️",
-    year: "2024",
-    link: "#",
+    title: "NusaTech Solutions — Agensi IT & Cloud",
+    category: "Company Profile" as Category,
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    description: "Landing page agensi IT modern dengan dark mode, visual dashboard glassmorphism, dan informasi layanan transformasi digital lengkap.",
+    color: "from-purple-600 to-indigo-600",
+    icon: "💻",
+    year: "2026",
+    link: "https://comany.vercel.app/",
+    image: "/images/portfolio/nusatech.png",
   },
   {
     id: 3,
-    title: "KlinikKu — Sistem Manajemen Klinik",
+    title: "OrangeCode Academy — Belajar Coding Interaktif",
     category: "Web App" as Category,
-    tech: ["Vue.js", "Laravel", "MySQL"],
-    description: "Aplikasi web untuk manajemen jadwal dokter, rekam medis pasien, dan laporan keuangan klinik.",
-    color: "from-green-500 to-teal-600",
-    icon: "🏥",
-    year: "2024",
-    link: "#",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    description: "Platform e-learning coding untuk pemula dengan kurikulum HTML/CSS/JS terstruktur, playground editor langsung, dan kuis interaktif.",
+    color: "from-orange-500 to-amber-500",
+    icon: "📚",
+    year: "2026",
+    link: "https://belajar-hazel.vercel.app/",
+    image: "/images/portfolio/orangecode.png",
   },
   {
     id: 4,
-    title: "TokoSegar — Grocery Delivery",
-    category: "E-Commerce" as Category,
-    tech: ["Next.js", "Prisma", "PostgreSQL"],
-    description: "Platform pengiriman kebutuhan dapur segar dengan fitur real-time tracking dan langganan mingguan.",
-    color: "from-lime-500 to-green-500",
-    icon: "🥦",
-    year: "2023",
-    link: "#",
+    title: "Batik Nusantara — Galeri Budaya Digital",
+    category: "Web App" as Category,
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    description: "Situs eksplorasi budaya Batik Indonesia dengan lini masa sejarah, galeri ragam motif daerah, dan filosofi spiritual di balik setiap corak.",
+    color: "from-amber-800 to-yellow-600",
+    icon: "👑",
+    year: "2026",
+    link: "https://batik-steel.vercel.app/",
+    image: "/images/portfolio/batik-nusantara.png",
   },
   {
     id: 5,
-    title: "Arsitek Nusantara — Portfolio Arsitek",
-    category: "Company Profile" as Category,
-    tech: ["Next.js", "Framer Motion"],
-    description: "Website portofolio firma arsitektur dengan galeri proyek interaktif dan formulir konsultasi.",
-    color: "from-amber-500 to-yellow-500",
-    icon: "🏛️",
-    year: "2023",
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "EduPintar — Platform Belajar Online",
+    title: "BudgetCal — Student Calorie Tracker",
     category: "Web App" as Category,
-    tech: ["React", "Firebase", "Stripe"],
-    description: "Platform LMS dengan video streaming, kuis interaktif, sertifikat otomatis, dan dashboard progress.",
-    color: "from-purple-500 to-pink-500",
-    icon: "📚",
-    year: "2023",
-    link: "#",
-  },
-  {
-    id: 7,
-    title: "OptimalSEO — Agensi Digital Marketing",
-    category: "SEO" as Category,
-    tech: ["WordPress", "Yoast SEO", "GA4"],
-    description: "Audit SEO menyeluruh dan optimasi konten untuk website properti — trafik naik 320% dalam 4 bulan.",
-    color: "from-cyan-500 to-blue-500",
-    icon: "📈",
-    year: "2023",
-    link: "#",
-  },
-  {
-    id: 8,
-    title: "RumahKita — Platform Properti",
-    category: "Web App" as Category,
-    tech: ["Next.js", "Maps API", "Supabase"],
-    description: "Marketplace properti dengan filter pencarian canggih, virtual tour 360°, dan sistem pengajuan KPR.",
-    color: "from-rose-500 to-pink-600",
-    icon: "🏠",
-    year: "2022",
-    link: "#",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    description: "Aplikasi pelacak kalori harian mahasiswa dengan rekomendasi menu sehat di bawah Rp 30.000, keranjang belanja hemat, dan kalkulator BMR.",
+    color: "from-emerald-500 to-teal-600",
+    icon: "🥗",
+    year: "2026",
+    link: "https://calorisan.vercel.app/",
+    image: "/images/portfolio/budgetcal.png",
   },
 ];
 
@@ -139,15 +111,34 @@ export default function Portofolio() {
         {/* Projects Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filtered.map((project, i) => (
-            <div
+            <a
               key={project.id}
-              className="group bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col cursor-pointer"
               data-aos="fade-up"
               data-aos-delay={i * 60}
             >
               {/* Card visual */}
-              <div className={`h-36 bg-gradient-to-br ${project.color} flex items-center justify-center text-5xl`}>
-                {project.icon}
+              <div className="h-44 overflow-hidden relative bg-gray-50 flex items-center justify-center">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${project.color} flex items-center justify-center text-5xl`}>
+                    {project.icon}
+                  </div>
+                )}
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white text-xs font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl shadow-lg transition-all transform translate-y-2 group-hover:translate-y-0 duration-300">
+                    Lihat Demo ↗
+                  </span>
+                </div>
               </div>
 
               {/* Card content */}
@@ -159,20 +150,21 @@ export default function Portofolio() {
                   <span className="text-xs text-gray-400">{project.year}</span>
                 </div>
 
-                <h3 className="text-base font-bold text-gray-900 mb-2 leading-snug">{project.title}</h3>
+                <h3 className="text-base font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors duration-200">
+                  {project.title}
+                </h3>
                 <p className="text-xs text-gray-500 leading-relaxed mb-4 flex-grow">{project.description}</p>
 
                 {/* Tech stack */}
-                <div className="flex flex-wrap gap-1.5 mb-4">
+                <div className="flex flex-wrap gap-1.5 mt-auto">
                   {project.tech.map((t) => (
                     <span key={t} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-md font-medium">
                       {t}
                     </span>
                   ))}
                 </div>
-
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
