@@ -22,46 +22,46 @@ export default function HeroHome() {
             >
               <div className="-mx-0.5 flex justify-center -space-x-3">
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
                   src={Avatar01}
                   width={32}
                   height={32}
                   alt="Avatar 01"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
                   src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
                   width={32}
                   height={32}
                   alt="Avatar 02"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
+                  src={Avatar03}
                   width={32}
                   height={32}
                   alt="Avatar 03"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
+                  src={Avatar04}
                   width={32}
                   height={32}
                   alt="Avatar 04"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
+                  src={Avatar05}
                   width={32}
                   height={32}
                   alt="Avatar 05"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50 w-8 h-8 object-cover"
+                  src={Avatar06}
+                  width={32}
+                  height={32}
+                  alt="Avatar 06"
                 />
               </div>
             </div>

@@ -63,7 +63,7 @@ export default function OurTeam() {
                   width={96}
                   height={96}
                   alt={member.name}
-                  className="rounded-full object-cover border-4 border-white shadow-md"
+                  className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
                 />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
