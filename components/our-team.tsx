@@ -9,13 +9,13 @@ import Avatar04 from "@/public/images/avatar-04.png";
 export default function OurTeam() {
   const team = [
     {
-      name: "Yasin",
+      name: "Yasin Muhammad",
       role: "CEO — Chief Executive Officer",
       avatar: Avatar01,
       bio: "Memimpin visi dan strategi perusahaan secara keseluruhan, memastikan pertumbuhan bisnis yang berkelanjutan dan berdampak bagi klien."
     },
     {
-      name: "Shinta",
+      name: "Shinta rahmata suliyani",
       role: "COO — Chief Operating Officer",
       avatar: Avatar02,
       bio: "Mengawasi operasional harian perusahaan, memastikan setiap proyek berjalan tepat waktu, terstruktur, dan memenuhi standar kualitas tertinggi."
@@ -51,8 +51,8 @@ export default function OurTeam() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {team.map((member, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-gray-50/50 p-6 rounded-3xl border border-gray-100 hover:bg-white hover:shadow-lg transition-all text-center flex flex-col items-center"
               data-aos="fade-up"
               data-aos-delay={index * 100}
@@ -69,7 +69,7 @@ export default function OurTeam() {
               <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
               <p className="text-xs font-semibold text-blue-600 mb-4">{member.role}</p>
               <p className="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">{member.bio}</p>
-              
+
               {/* Social icons */}
               <div className="flex gap-4">
                 <a href="#0" className="text-gray-400 hover:text-blue-600 transition-colors" aria-label="Twitter">
